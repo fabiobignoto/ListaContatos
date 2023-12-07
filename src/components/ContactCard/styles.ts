@@ -67,10 +67,6 @@ export const ContactCardStyle = styled.div`
       margin-right: 4px;
     }
 
-    input {
-      margin-left: 4px;
-    }
-
     ${TagStyle} {
       @media (max-width: 320px) {
         display: none;

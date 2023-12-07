@@ -93,10 +93,9 @@ const Form = () => {
         type="text"
       />
       <Dflex>
-        <Tag>{phoneType}</Tag>
         <Input
           isRequired={true}
-          placeholder="Telefone"
+          placeholder="Telefone (obrigatório)"
           currentValue={phone}
           desiredFunc={(newPhone: string) =>
             setPhone(newPhone.replace(/\D/g, ''))

@@ -175,7 +175,7 @@ const ContactCard = (contact: ContactClass) => {
               <Input
                 currentValue={name}
                 desiredFunc={(e) => setName(e)}
-                placeholder="Nome do contato (obrigatório)"
+                placeholder="Nome (obrigatório)"
                 type="text"
                 isRequired
               />
@@ -183,12 +183,11 @@ const ContactCard = (contact: ContactClass) => {
             <div className="phone">
               <DivPhoneTypeAndTag>
                 <TagFigure tagType="phone" />
-                <Tag>{phoneType}</Tag>
               </DivPhoneTypeAndTag>
               <Input
                 currentValue={phone}
                 desiredFunc={(e) => preparePhoneToBeSet(e)}
-                placeholder="Telefone"
+                placeholder="Telefone (obrigatório)"
                 type="phone"
                 isRequired
                 isMobile={phoneType === enumsPhoneType.PhoneType.MOBILE}
