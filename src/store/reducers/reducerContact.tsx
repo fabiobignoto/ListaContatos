@@ -18,18 +18,7 @@ type ContactState = {
 
 //Criando a variavel initialState do tipo ContactState criado acima
 const initialState: ContactState = {
-  items: [
-    {
-      name: 'Nome do contato',
-      phone: {
-        phoneNumber: '1234567890',
-        phoneType: enumsPhoneType.PhoneType.LANDLINE
-      },
-      categoria: enumsCategory.Categorias.PROFISSIONAL,
-      email: 'usuario@servidor.com',
-      id: 0
-    }
-  ]
+  items: []
 }
 
 //Criação do slice deste reducer
