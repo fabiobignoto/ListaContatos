@@ -50,7 +50,6 @@ export const ContactCardStyle = styled.div`
 
     a {
       width: 110px;
-      margin-left: 4px;
       text-align: center;
       color: black;
       text-decoration: none;
@@ -62,6 +61,10 @@ export const ContactCardStyle = styled.div`
       &:hover {
         background-color: lightgray;
       }
+    }
+
+    ${TagStyle} {
+      margin-right: 4px;
     }
 
     input {
@@ -134,4 +137,5 @@ export const CardEditingButton = styled.div<ButtonFigureProps>`
 `
 export const DivPhoneTypeAndTag = styled.div`
   display: flex;
+  align-items: center;
 `
