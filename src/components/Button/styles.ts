@@ -27,7 +27,7 @@ export const ButtonStyle = styled.button<ButtonStyleProps>`
       : colors.buttonColorConfirm};
   color: white;
 
-  border: 1px solid black;
+  border: 1px solid ${colors.blackborder};
   border-radius: 16px;
 
   cursor: pointer;

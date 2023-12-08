@@ -216,7 +216,7 @@ const ContactCard = (contact: ContactClass) => {
               <CardEditingButton
                 title="Salvar"
                 onClick={saveEditedContact}
-                $selectedColour="lightgreen"
+                $isCorrect="confirm"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -232,7 +232,7 @@ const ContactCard = (contact: ContactClass) => {
               <CardEditingButton
                 title="Cancelar"
                 onClick={resetChanges}
-                $selectedColour="salmon"
+                $isCorrect="cancel"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -247,7 +247,7 @@ const ContactCard = (contact: ContactClass) => {
               </CardEditingButton>
               <CardEditingButton
                 title="Excluir"
-                $selectedColour="transparent"
+                $isCorrect="delete"
                 onClick={deleteContact}
               >
                 <svg

@@ -11,7 +11,7 @@ export const FilterTagStyle = styled.li<FilterTagProps>`
 
   margin: auto;
 
-  border: 2px solid black;
+  border: 2px solid ${colors.blackborder};
   border-radius: 16px;
 
   background-color: ${(props) =>

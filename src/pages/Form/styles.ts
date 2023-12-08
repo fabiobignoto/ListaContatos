@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { InputStyle } from '../../components/Input/styles'
+import { colors } from '../../styles'
 
 export const FormStyle = styled.form`
   display: flex;
@@ -21,9 +22,9 @@ export const FormStyle = styled.form`
   select {
     padding: 4px 8px;
 
-    background-color: transparent;
+    background-color: ${colors.selectBackground};
 
-    border: 1px solid black;
+    border: 1px solid ${colors.blackborder};
     border-radius: 16px;
   }
 

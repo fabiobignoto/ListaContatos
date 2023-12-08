@@ -12,7 +12,7 @@ export const HeaderStyle = styled.header`
   padding: 40px;
 
   background-color: ${colors.backgroundHeader};
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid ${colors.blackborder};
 
   ${ButtonStyle} {
     display: inline-flex;

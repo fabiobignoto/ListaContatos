@@ -3,7 +3,7 @@ import { colors } from '../../styles'
 import { TagStyle } from '../Tag/styles'
 
 type ButtonFigureProps = {
-  $selectedColour: string
+  $isCorrect: 'confirm' | 'cancel' | 'delete'
 }
 
 export const ContactCardStyle = styled.div`
@@ -22,7 +22,7 @@ export const ContactCardStyle = styled.div`
 
   background-color: ${colors.backgroundContactCard};
 
-  border: 1px solid black;
+  border: 1px solid ${colors.blackborder};
   border-radius: 8px;
 
   box-shadow: 2px 1px ${colors.shadowBoxContactCard};
@@ -59,7 +59,7 @@ export const ContactCardStyle = styled.div`
       transition: all 0.5s;
 
       &:hover {
-        background-color: lightgray;
+        background-color: ${colors.backgroundFilterTagHover};
       }
     }
 
@@ -117,7 +117,12 @@ export const CardEditingButton = styled.div<ButtonFigureProps>`
   justify-content: center;
   padding: 4px;
 
-  background-color: ${(props) => props.$selectedColour};
+  background-color: ${(props) =>
+    props.$isCorrect === 'confirm'
+      ? colors.iconConfirm
+      : props.$isCorrect === 'delete'
+        ? 'transparent'
+        : colors.iconDanger};
   border-radius: 50%;
 
   align-items: center;
@@ -127,8 +132,10 @@ export const CardEditingButton = styled.div<ButtonFigureProps>`
   &:hover {
     transition: all 0.3s;
     background-color: ${(props) =>
-      props.$selectedColour === 'lightgreen' ? 'darkgreen' : 'darkred'};
-    color: white;
+      props.$isCorrect === 'confirm'
+        ? colors.iconConfirmHover
+        : colors.iconDangerHover};
+    color: ${colors.iconColorHover};
   }
 `
 export const DivPhoneTypeAndTag = styled.div`
