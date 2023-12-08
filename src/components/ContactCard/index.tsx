@@ -149,7 +149,9 @@ const ContactCard = (contact: ContactClass) => {
       return (
         <div className="email">
           <TagFigure tagType="email" />
-          <span>{contact.email}</span>
+          <a title="Enviar e-mail" href={`mailto:${contact.email}`}>
+            {contact.email}
+          </a>
         </div>
       )
     } else {

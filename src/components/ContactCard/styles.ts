@@ -49,10 +49,9 @@ export const ContactCardStyle = styled.div`
     align-items: center;
 
     a {
-      width: 110px;
+      width: 130px;
       text-align: center;
-      color: black;
-      text-decoration: none;
+      padding: 8px;
 
       border-radius: 16px;
 
@@ -81,6 +80,18 @@ export const ContactCardStyle = styled.div`
     padding: 8px;
 
     align-items: center;
+    a {
+      text-align: center;
+      padding: 8px;
+
+      border-radius: 16px;
+
+      transition: all 0.5s;
+
+      &:hover {
+        background-color: ${colors.backgroundFilterTagHover};
+      }
+    }
   }
 
   .category {

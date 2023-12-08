@@ -39,6 +39,10 @@ export const GlobalStyle = createGlobalStyle`
       border-radius: 16px;
       width: 150px;
     }
+    a{
+      text-decoration:none;
+      color: black;
+    }
   }
 `
 
